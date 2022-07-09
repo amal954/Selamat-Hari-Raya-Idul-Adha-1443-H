@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Mono:wght@700&family=Water+Brush&display=swap');
+body {
+	background: url('img/bg.jpg');
+	background-size: cover;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.content {
+	
+}
+
+#jam {
+	background-image: linear-gradient(to right,#4E9F3D,#D8E9A8);
+	border-radius: 23px;
+	font-family: 'Roboto Mono', monospace;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes judul {
+	from{opacity:0%;color:white;}
+	to{opacity:100%;color:#191A19;}
+}
+h1 {
+	
+	margin-top: 10%;
+	font-size: 70px;
+	font-family: 'Water Brush', cursive;
+	text-shadow: 20px grey;
+	animation-name: judul;
+	animation-duration: 5s;
+}
+#greeting {
+	color: #D8E9A8;
+	text-decoration: underline;
+	font-family: 'Roboto Mono', monospace;
+
+}
+.footer #contact {
+	outline: none;
+	border-radius: 10px;
+	margin: 10px auto;
+	width: 90%;
+}
+.footer #submit {
+	background-color: #191A19;
+	color: #D8E9A8;
+	width: 90%;
+	height: 30px;
+	outline: none;
+	border-radius: 23px;
+}
+.footer p {
+	margin-top: 30px;
+}
+.footer {
+	width: 100%;
+	display: block;
+	color:#191A19;
+	background-color: #D8E9A8;
+	font-size: 10px;
+	position: fixed;
+	margin: 0 auto;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+	text-transform: uppercase;
+}
