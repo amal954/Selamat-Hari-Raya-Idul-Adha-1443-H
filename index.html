@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Saya Amal Ma'ruf mengucapkan......." />
+		<title>Happy Eid Al-Adha</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="content">
+			
+		
+		<div id="jam">
+			
+		</div>
+		<h1>Happy Eid Al-Adha</h1>
+		<div id="greeting">
+			
+		</div>
+		</div>
+		<div class="footer">
+		
+				
+			
+			<textarea name="contact" id=contact rows="6" placeholder="Tinggalkan pesan anda disini......." required></textarea>
+			<input type="submit" name="submit" id="submit" value="SUBMIT" onclick="pesan()" />
+			
+			<p>mjdeveloper.site 2022</p>
+		</div>
+		
+		<script type="text/javascript" charset="utf-8">
+			
+			var i = 0;
+			var txt = 'Saya Amal Maruf mengucapkan Selamat Hari Raya Idul Adha, Mohon maaf lahir batin.'; /* The text */
+			var speed = 50; /* The speed/duration of the effect in milliseconds */
+			
+			function typeWriter() {
+			  if (i < txt.length) {
+			    document.getElementById("greeting").innerHTML += txt.charAt(i);
+			  	i++;
+			  	setTimeout(typeWriter, speed);
+			  }
+			}
+			typeWriter();
+			function startTime() {
+			var now = new Date();
+		
+			document.getElementById("jam").innerHTML = now.toLocaleString();
+			setTimeout(startTime, 1000);
+			
+			}
+			startTime()
+			function pesan(){
+				var tombol = document.getElementById("submit");
+				var text = document.getElementById("contact").value;
+				var explode = text.split(" ");
+				var implode = explode.join("+");
+				console.log(implode);
+				if(text == "") {
+					alert("field required");
+				}else {
+				var redirect = window.location.href = "https://wa.me/+6285890073581?text="+implode;
+				if(redirect){
+					tombol.value = 'LOADING...';
+					
+				
+					
+					
+				}}
+			}
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
